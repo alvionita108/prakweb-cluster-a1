@@ -1,0 +1,64 @@
+.navbar, .footer {
+  padding: 5px 5px 5px 0;
+  text-align: center;
+  background-color: salmon;
+  height: 50px;
+}
+
+.navbar {
+  word-spacing: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+.navbar a {
+  margin-top: 200px;
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+
+.navbar a:hover {
+  color: black;
+}
+
+.navbar li {
+  display: inline;
+}
+
+header {
+  height: 515px;
+  background-color: peachpuff;
+  margin-top: -50px;
+  top: 0;
+}
+
+header h1 {
+  padding-top: 150px;
+  font-weight: bold;
+  padding-left: 100px;
+}
+
+header p {
+  padding-left: 100px;
+}
+
+header img {
+  float: right;
+  margin-top: -220px;
+}
+
+.content {
+  text-align: center;
+}
+
+.content img {
+  width: 300px;
+  height: auto;
+}
+
+.footer p {
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
