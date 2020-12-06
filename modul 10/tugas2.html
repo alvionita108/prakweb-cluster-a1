@@ -1,0 +1,75 @@
+<!-- contoh DOM
+getElementByName()
+getElementByClassName()
+getElementByTagNameNS()
+querySelector()
+querySelectorAll() -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>118140105</title>
+
+    <style>
+        main {
+            width: 90%;
+            margin: auto;
+        }
+
+        div {
+            background-color: pink;
+            text-align: center;
+            padding-top: 3px;
+            margin: 5px;
+            padding-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <div id="nama">Vina Alvionita</div> 
+            <div class="nim">118140105</div>
+                <section>
+                    Alamat : Pesawaran, Lampung
+                 </section>            
+        </div>
+       
+        <br>
+        <button onclick="return changeColor(document.getElementById('nama'), 'yellow')">ubah  warna background (nama) dengan getElementById</button> <br>
+        <button onclick="return changeColor(document.getElementsByClassName('nim'), 'red')">ubah warna background (nim) dengan getElementsByClassName</button> <br>
+        <button onclick="return changeColor(document.getElementsByTagName('section'), 'white')">ubah warna background (alamat) dengan getElementsByTagName</button> <br>
+        <button onclick="return changeColor(document.querySelector('div'), 'orange')">Ubah Background dengan querySelector</button> <br>
+        <button onclick="return changeBorder(document.querySelectorAll('div'), '3px solid')">ubah border dengan querySelectorAll</button>
+    </main>
+
+    <script>
+        function changeColor(element, color) {
+            elementLength = element.length;
+            if (elementLength) {
+                for (let x = 0; x < elementLength; x++) {
+                    element[x].style.backgroundColor = color;
+                }
+                return;
+            }
+
+            element.style.backgroundColor = color;
+        }
+
+        function changeBorder(element, border) {
+            elementLength = element.length;
+            if (elementLength) {
+                for (let x = 0; x < elementLength; x++) {
+                    element[x].style.border = border;
+                }
+                return;
+            }
+
+            element.style.border = border;
+        }
+
+    </script>
+</body>
+</html>
